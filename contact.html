@@ -6,7 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Muneeb Bashir</title>
-    <!-- BOOTSTRAP -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
         integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -95,20 +94,23 @@
             <div class="container">
                 <h1 class="mb-5">LET'S WORK TOGETHER<span class="green-square"></span></h1>
                 <form id="contactForm" action="https://api.web3forms.com/submit" method="POST">
+                     <!-- Web3Forms API Key -->
+                     <input type="hidden" name="access_key" value="f84696b3-c9b6-4304-bf51-3312e60b7dc6">
+                     
                     <div class="row mb-5 g-5">
                         <div class="col-md-6 mb-3 mb-md-0">
                             <label for="firstName" class="mb-4">
                                 <span class="green-dot"></span>
                                 FIRST NAME
                             </label>
-                            <input type="text" class="form-control" id="firstName" placeholder="Muneeb" required>
+                            <input type="text" class="form-control" id="firstName" name="first_name" placeholder="Muneeb" required>
                         </div>
                         <div class="col-md-6">
                             <label for="lastName" class="mb-4">
                                 <span class="green-dot"></span>
                                 LAST NAME
                             </label>
-                            <input type="text" class="form-control" id="lastName" placeholder="Bashir" required>
+                            <input type="text" class="form-control" id="lastName" name="last_name" placeholder="Bashir" required>
                         </div>
                     </div>
                     <div class="mb-5">
@@ -116,7 +118,7 @@
                             <span class="green-dot"></span>
                             HOW CAN I REACH YOU?
                         </label>
-                        <input type="email" class="form-control" id="email" placeholder="Enter your email" required>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Enter your email" required>
                     </div>
                     <div class="row mb-5 g-5">
                         <div class="col-md-6 mb-3 mb-md-0">
@@ -124,7 +126,7 @@
                                 <span class="green-dot"></span>
                                 WHAT'S THE TYPE OF YOUR COMPANY?
                             </label>
-                            <select class="form-control" id="companyType" required>
+                            <select class="form-control" id="companyType" name="company_type" required>
                                 <option value="" disabled selected>Freelancer with established brand</option>
                                 <option value="startup">Startup</option>
                                 <option value="enterprise">Enterprise</option>
@@ -135,9 +137,9 @@
                         <div class="col-md-6">
                             <label for="lastName" class="mb-4">
                                 <span class="green-dot"></span>
-                                YOUR BUDGET
+                                YOUR BUDGETT
                             </label>
-                            <input type="text" class="form-control" id="budget" placeholder="YOUR BUDGET" required>
+                            <input type="text" class="form-control" id="budget" name="budget" placeholder="YOUR BUDGET" required>
                         </div>
                     </div>
                     <div class="mb-3">
@@ -145,9 +147,14 @@
                             <span class="green-dot"></span>
                             MESSAGE
                         </label>
-                        <textarea class="form-control mb-5" id="message" rows="7" placeholder="MESSAGE"
+                        <textarea class="form-control mb-5" id="message" name="message" rows="7" placeholder="MESSAGE"
                             required></textarea>
                     </div>
+
+                    <!-- Success & Error Message (Hidden Initially) -->
+                    <div id="formMessage" class="alert d-none"></div>
+
+                    <!-- Submit Button -->
                     <button type="submit" class="btn btn-submit">SUBMIT NOW</button>
                 </form>
             </div>
@@ -188,6 +195,7 @@
 
     <!-- jquery js  -->
     <script src="Assets/js/jquery.js"></script>
+    <script src="Assets/js/contact.js"></script>
 
     <!-- BOOTSTRAP -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/js/bootstrap.min.js"
