@@ -28,7 +28,7 @@ const services = [
             'Cross-Browser Compatibility',
             'Branding Integration',
         ],
-        imageUrl: 'Assets/Images/Works/time-and-attendance.GIF',
+        imageUrl: 'Assets\Images\Works\time-and-attendance.gif',
     },
     {
         id: 'graphics-design',
