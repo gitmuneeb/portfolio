@@ -29,10 +29,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // PLAY AUDIO WHEN BUTTON CLICKED
     const bodyTop = document.getElementById('bodyTop');
+
     bodyTop.addEventListener('click', () => {
         window.scrollTo({ top: 0, behavior: 'smooth' });
         const audio = document.getElementById('playAudio');
-        audio.play();
+        audio.play().catch((error) => {
+            console.error('Audio playback failed:', error);
+        });
     });
 
     // BODY TOP BUTTON & HEADER STICKY
