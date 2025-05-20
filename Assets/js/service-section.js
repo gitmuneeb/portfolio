@@ -15,9 +15,9 @@ const services = [
         imageUrl: 'Assets/Images/Works/01-DEVPULSE.webp',
     },*/
     {
-        id: 'web-design',
-        title: 'Web Design',
-        description: 'Where Creativity Meets Functionality to Craft Visually Stunning Websites.',
+        id: 'uiux-design',
+        title: 'UIUX Design',
+        description: 'Where Creativity Meets Functionality to Craft Visually Stunning Websites and mobile apps.',
         startingCost: 1500,
         features: [
             'Bespoke Visual Design',
@@ -31,7 +31,7 @@ const services = [
         imageUrl: 'Assets/Images/Works/mobile-web-designing.jpg',
     },
     {
-        id: 'graphics-design',
+        id: 'wordPress-development',
         title: 'WordPress Development',
         description: 'Building Powerful, Scalable, and User-Friendly WordPress Solutions.',
         startingCost: 1000,
