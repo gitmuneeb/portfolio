@@ -332,7 +332,7 @@ a {
 
 .portfolio .portfolio-card {
     position: relative;
-    margin-bottom: 30px;
+    margin-bottom: 90px;
     opacity: 0;
     transform: translateY(50px);
     height: 31.25rem;
@@ -359,9 +359,22 @@ a {
 }
 
 
-
+/*ORIGINAL
 .portfolio .card-overlay {
     position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    padding: 20px;
+    /* background: linear-gradient(to top, #ffffff9f, transparent); 
+    background: linear-gradient(to top, #000000d5, transparent);
+
+    /* width: 96%; 
+    margin: 0 auto;
+    border-radius: 0 0 8px 8px;
+}*/
+.portfolio .card-overlay {
+    position: relative; /* DUPLICATE*/
     bottom: 0;
     left: 0;
     right: 0;
